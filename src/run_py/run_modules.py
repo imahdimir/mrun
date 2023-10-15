@@ -17,8 +17,7 @@ class DefaultDirs :
 
 def run_modules(modules_dir: Path | str = DefaultDirs().m) -> None :
     """
-    runs all modules in the modules directory that start with '_' in the
-    order of the number after '_'.
+    runs all modules in the modules directory that start with '_' in the order of the number after '_'.
     """
 
     ms = get_modules_to_run_fps(modules_dir)
@@ -33,12 +32,9 @@ def run_modules(modules_dir: Path | str = DefaultDirs().m) -> None :
 
 def get_modules_to_run_fps(modules_dir: Path | str) -> list[Path] :
     """
-    finds all .py files in modules_dir that start with '_' and
-    sorts them based on the number after '_'. This is the convention
-    I use to specify modules to run in order. The number after '_' is
-    used to specify the order. There might be other modules in the same
-    dir that are not prefixed with '_' and they will not be run. There
-    are auxiliary modules.
+    finds all .py files in the modules_dir that start with '_' and sorts them based on the number after '_'. Returns a list of these files pathes.
+
+    This is the convention I use to specify modules to run in order. The number after '_' is used to specify the order. There might be other modules in the same dir that are not prefixed with '_' and they will not be run. There are auxiliary modules.
     """
 
     # get all .py files in modules_dir

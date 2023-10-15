@@ -3,10 +3,10 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "mrun"
+name = "run_py"
 version = "0.0.0"
 authors = [{ name = "Mahdi Mir", email = "imahdimir@gmail.com" }]
-description = " Some functions to run modules from a dir and removing cache dirs. Includes default Dirs."
+description = " Some functions to run modules from a dir and removing cache dirs. Includes DefaultDirs class."
 readme = "README.md"
 license = { file = "LICENSE" }
 dependencies = [
