@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "run_py"
-version = "0.0.0"
+version = "0.0.1"
 authors = [{ name = "Mahdi Mir", email = "imahdimir@gmail.com" }]
 description = " Some functions to run modules from a dir and removing cache dirs. Includes DefaultDirs class."
 readme = "README.md"
@@ -30,5 +30,5 @@ keywords = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/imahdimir/mrun"
-"Bug Tracker" = "https://github.com/imahdimir/mrun/issues"
+"Homepage" = "https://github.com/imahdimir/run_py"
+"Bug Tracker" = "https://github.com/imahdimir/run_py/issues"
