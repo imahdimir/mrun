@@ -2,7 +2,7 @@ import runpy
 import shutil
 from pathlib import Path
 
-from githubdata import default_containing_dir as gd_default
+from githubdata import default_githubdata_dir as gd_default
 
 class DefaultDirs :
     def __init__(self , make_default_dirs: bool = False) :
