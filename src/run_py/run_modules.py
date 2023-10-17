@@ -6,16 +6,14 @@ from githubdata import default_githubdata_dir as gd_default
 
 class DefaultDirs :
     def __init__(self , make_default_dirs: bool = False) :
-        self.m = Path('modules/')
         self.t = Path('temp_data/')
         self.gd = gd_default
 
         if make_default_dirs :
-            self.m.mkdir(exist_ok = True)
             self.t.mkdir(exist_ok = True)
             self.gd.mkdir(exist_ok = True)
 
-def run_modules(modules_dir: Path | str = DefaultDirs().m) -> None :
+def run_modules(modules_dir: Path | str = Path.cwd()) -> None :
     """
     runs all modules in the modules directory that start with '_' in the order of the number after '_'.
     """
