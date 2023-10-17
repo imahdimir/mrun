@@ -12,18 +12,3 @@ license = { file = "LICENSE" }
 dependencies = [
     "githubdata"
 ]
-classifiers = [
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-    "Intended Audience :: Developers",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: Implementation :: PyPy",
-    "Topic :: Software Development",
-    "Topic :: Software Development :: Libraries",
-    "Topic :: Utilities"
-]
-
-[project.urls]
-"Homepage" = "https://github.com/imahdimir/run_py"
-"Bug Tracker" = "https://github.com/imahdimir/run_py/issues"
