@@ -43,7 +43,7 @@ def get_modules_to_run_fps(modules_dir: Path | str) -> list[Path] :
     pys = Path(modules_dir).glob('*.py')
 
     # filter those that start with '_'
-    ms = [x for x in pys if x.name.startswith('_')]
+    ms = [x for x in pys if x.name.startswith('_') and not x.name.startswith('__')]
 
     # sort .py files them based on the number after _
     ms = sorted(ms)
