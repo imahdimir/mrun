@@ -1,2 +1,2 @@
-Provides a function Runs py modules from modules directory that start with '_'
-in order of numbers after the underscore.
+Some functions to run modules from a dir and removing cache dirs. Includes
+DefaultDirs class.

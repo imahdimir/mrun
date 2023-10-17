@@ -2,6 +2,7 @@
 
     """
 
+import re
 import runpy
 import shutil
 from pathlib import Path
@@ -47,8 +48,7 @@ def get_modules_to_run_fps(modules_dir: Path | str) -> list[Path] :
     pys = Path(modules_dir).glob('*.py')
 
     # filter those that start with '_'
-    ms = [x for x in pys if
-          x.name.startswith('_') and not x.name.startswith('__')]
+    ms = [x for x in pys if re.fullmatch(r'[a-z]_.+\.py' , x.name)]
 
     # sort .py files them based on the number after _
     ms = sorted(ms)
