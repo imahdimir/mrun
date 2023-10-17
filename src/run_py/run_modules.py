@@ -31,11 +31,11 @@ def run_modules(modules_dir: Path | str = Path.cwd()) -> None :
 
     # run modules in order
     for m in ms :
-        print('\n\t*** Running The Module \" {} \" ***\n'.format(m.name))
+        print('\n\t*** Running The Module \"{}\" ***\n'.format(m.name))
 
         runpy.run_path(str(m) , run_name = '__main__')
 
-        print('\n\t*** The Module \" {} \" Done! ***\n'.format(m.name))
+        print('\n\t*** The Module \"{}\" Done! ***\n'.format(m.name))
 
 def get_modules_to_run_fps(modules_dir: Path | str) -> list[Path] :
     """
