@@ -1,6 +1,6 @@
 """
 
-"""
+    """
 
 import runpy
 import shutil
@@ -23,6 +23,10 @@ def run_modules(modules_dir: Path | str = Path.cwd()) -> None :
     """
 
     ms = get_modules_to_run_fps(modules_dir)
+
+    print(f'\n\t*** Number of Modules to run: {len(ms)}***\n')
+    print('\n\t*** Running The Following Modules In Order: ***\n')
+    _ = [print('\t\t' , m.name) for m in ms]
 
     # run modules in order
     for m in ms :
